@@ -1,0 +1,50 @@
+/* Cadastro Industrial Premium — estilos isolados do Login */
+.cadastro-page, .cadastro-page * { box-sizing: border-box; }
+.cadastro-page { width: 100%; min-height: 100vh; min-height: 100dvh; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+.cadastro-layout { display: grid; grid-template-columns: 54% 46%; width: 100%; min-height: 100vh; min-height: 100dvh; }
+.cadastro-visual { min-height: 100%; color: #fff; padding: clamp(28px, 5vw, 90px); display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(90deg, rgba(0,12,27,.74), rgba(0,18,36,.32)), url('../assets/img/login-industrial.jpg') center center / cover no-repeat, #061b30; }
+.cadastro-brand { font-size: clamp(13px, 1.4vw, 20px); font-weight: 800; letter-spacing: 1.5px; }
+.cadastro-brand-mark, .cadastro-brand-accent { color: #ff6600; }
+.cadastro-brand-mark { font-size: 26px; margin-right: 12px; }
+.cadastro-brand-divider { opacity: .7; padding: 0 12px; }
+.cadastro-brand-accent { font-size: .75em; letter-spacing: 2px; }
+.cadastro-visual-copy { max-width: 650px; }
+.cadastro-accent-line { width: 72px; height: 5px; background: #ff6600; margin-bottom: clamp(18px, 3vh, 36px); }
+.cadastro-visual-title.MuiTypography-root { color: white; font-weight: 850; font-size: clamp(36px, 4.5vw, 72px); line-height: 1.08; letter-spacing: -1.8px; }
+.cadastro-visual-title span { color: #ff6600; }
+.cadastro-visual-description.MuiTypography-root { margin-top: 26px; font-size: clamp(14px, 1.3vw, 19px); line-height: 1.6; max-width: 500px; }
+.cadastro-visual-footer.MuiTypography-root { font-size: 12px; letter-spacing: 2px; font-weight: 700; }
+.cadastro-visual-footer span { color: #ff6600; margin: 0 15px; }
+.cadastro-form-side { padding: clamp(20px, 3vw, 52px) clamp(24px, 5vw, 90px); display: flex; flex-direction: column; justify-content: center; gap: 22px; min-width: 0; }
+.cadastro-form { width: 100%; max-width: 570px; margin: auto; }
+.cadastro-eyebrow.MuiTypography-root { color: #ff6600; font-size: 13px; font-weight: 800; letter-spacing: 2px; margin-bottom: 10px; }
+.cadastro-title.MuiTypography-root { font-size: clamp(32px, 3.2vw, 52px); font-weight: 850; letter-spacing: -1.3px; color: #061b30; line-height: 1.12; }
+.cadastro-title span { color: #ff6600; }
+.cadastro-subtitle.MuiTypography-root { color: #58718d; font-size: clamp(13px, 1.1vw, 16px); line-height: 1.6; margin-top: 12px; margin-bottom: clamp(16px, 3vh, 32px); }
+.cadastro-fields { display: grid; gap: clamp(10px, 1.5vh, 19px); }
+.cadastro-field > .MuiTypography-root { display: block; color: #071c33; font-size: 14px; font-weight: 700; margin-bottom: 7px; }
+.cadastro-field .MuiOutlinedInput-root { border-radius: 13px; background: #f5f8fb; min-height: 52px; }
+.cadastro-field .MuiOutlinedInput-notchedOutline { border-color: #d7e1ec; }
+.cadastro-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: #ff6600; border-width: 2px; }
+.cadastro-field .MuiInputAdornment-root { color: #758293; }
+.cadastro-field .MuiInputBase-input { padding-top: 14px; padding-bottom: 14px; }
+.cadastro-submit.MuiButton-root { margin-top: clamp(16px, 2.5vh, 28px); min-height: 53px; border-radius: 40px; background: #061b30; color: white; font-weight: 800; text-transform: none; font-size: 15px; box-shadow: none; }
+.cadastro-submit.MuiButton-root:hover { background: #103451; box-shadow: none; }
+.cadastro-submit .MuiSvgIcon-root { color: #ff6600; }
+.cadastro-separator { display: flex; align-items: center; gap: 18px; color: #71859b; margin: 15px 0; }
+.cadastro-separator::before, .cadastro-separator::after { content: ''; height: 1px; flex: 1; background: #d7e1ec; }
+.cadastro-login-link.MuiLink-root { display: block; border: 1px solid #9bb0c6; border-radius: 13px; text-align: center; padding: 15px 10px; color: #526d87; font-size: 14px; }
+.cadastro-login-link strong { color: #ff6600; }
+.cadastro-copyright { max-width: 570px; width: 100%; margin: 0 auto; display: flex; justify-content: space-between; gap: 12px; color: #73879d; font-size: 11px; }
+.cadastro-copyright strong { color: #061b30; }.cadastro-copyright strong span { color: #ff6600; }
+.cadastro-alert.MuiAlert-root { margin-bottom: 12px; }
+@media (max-height: 800px) and (min-width: 851px) { .cadastro-form-side { padding-top: 15px; padding-bottom: 15px; gap: 8px; } .cadastro-subtitle.MuiTypography-root { margin-top: 6px; margin-bottom: 12px; } .cadastro-fields { gap: 8px; } .cadastro-field .MuiOutlinedInput-root { min-height: 44px; } .cadastro-field .MuiInputBase-input { padding-top: 10px; padding-bottom: 10px; } .cadastro-field > .MuiTypography-root { margin-bottom: 4px; } .cadastro-submit.MuiButton-root { margin-top: 12px; min-height: 46px; } .cadastro-separator { margin: 9px 0; } .cadastro-login-link.MuiLink-root { padding: 10px; } }
+@media (max-width: 850px) { .cadastro-layout { grid-template-columns: 1fr; } .cadastro-visual { min-height: 220px; padding: 28px; gap: 25px; } .cadastro-visual-title.MuiTypography-root { font-size: clamp(30px, 7vw, 48px); } .cadastro-visual-description.MuiTypography-root { margin-top: 12px; } .cadastro-visual-footer.MuiTypography-root { display: none; } .cadastro-form-side { padding: 30px 22px; } .cadastro-form { max-width: 550px; } .cadastro-copyright { flex-wrap: wrap; } }
+@media (max-width: 420px) { .cadastro-visual { min-height: 175px; padding: 20px; } .cadastro-visual-title.MuiTypography-root { font-size: 29px; } .cadastro-brand { font-size: 12px; } .cadastro-brand-divider { padding: 0 5px; } .cadastro-visual-description.MuiTypography-root { font-size: 12px; } .cadastro-form-side { padding: 24px 16px; } }
+
+/* Acesso social — Google */
+.cadastro-social-options { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 14px; }
+.cadastro-social-button.MuiButton-root { min-height: 46px; border: 1px solid #cad7e4; border-radius: 12px; color: #061b30; font-size: 14px; font-weight: 700; text-transform: none; background: #fff; }
+.cadastro-social-button.MuiButton-root:hover { border-color: #ff6600; background: #f7f9fb; }
+.cadastro-google-mark { font-size: 21px; font-weight: 800; font-family: Arial, sans-serif; color: #4285f4; }
+@media (max-width: 390px) { .cadastro-social-options { grid-template-columns: 1fr; } }
