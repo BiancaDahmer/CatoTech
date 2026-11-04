@@ -1,0 +1,34 @@
+# Dependências
+/node_modules/
+/.pnp
+.pnp.js
+
+# Testes
+/coverage/
+
+# Compilação
+/build/
+
+# Variáveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Backups e arquivos temporários
+*.bak
+*.tmp
